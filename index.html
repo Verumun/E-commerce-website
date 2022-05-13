@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo/favicon.ico" type="image/x-icon">
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>E-commerce</title>
+</head>
+<body>
+    
+<!-- overlay -->
+    <div class="overlay" data-overlay></div>
+
+<!-- Modal -->
+    <div class="modal closed" data-modal>
+
+        <div class="modal-close-overlay" data-modal-overlay></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close-btn" data-modal-close>
+                <i class="fa-regular fa-square-xmark"></i>
+            </button>
+
+            <div class="newsletter-img">
+                <img src="./images/newsletter.png" width="400" height="400" alt="">
+            </div>
+
+            <div class="newsletter">
+                <form action="#">
+                    <div class="newsletter-header">
+                        <h3 class="newsletter-title">Subsrcibe Newsletter</h3>
+        
+                        <p class="newsletter-desc">
+                            Subscribe the <b>Anon</b> to get the lastes products and discount update.
+                        </p>
+                    </div>
+
+                    <input type="email" name="email" class="email-field" placeholder="Email Address" required> 
+
+                    <button type="submit" class="btn-newsletter"> Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+<!-- End of Modal -->
+
+
+<!-- Notification Toast -->
+<div class="notification-toast closed" data-toast>
+    
+    <button class="toast-close-btn" data-toast-close>
+        <i class="fa-regular fa-square-xmark"></i>
+    </button>
+
+    <div class="toast-banner">
+        <img src="./images/products/jewellery-1.jpg" width="80" height="70" alt="">
+    </div>
+
+
+    <div class="toast-details">
+        <p class="toast-message">Someone in new just bought</p>
+
+        <p class="toast-title">Rose Gold Earings</p>
+
+        <p class="toast-meta">
+            <time datetime="PT2M">2 Minutes</time> ago
+        </p>
+    </div>
+
+</div>
+<!-- End of notification toast -->
+
+
+<!-- header -->
+
+
+<header>
+    <div class="header-top">
+        <div class="header-container">
+            <ul class="header-social-container">
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="header-alert-news">
+                <p> <b>free shipping</b>  this week order over $55</p>
+            </div>
+
+            <div class="header-top-actions">
+                <select name="currency">
+                    
+                    <option value="usd">USD &dollar;</option>
+                    <option value="eur">EUR &euro;</option>
+
+                </select>
+
+                <select name="language">
+                    <option value="en-US">ENGLISH</option>
+                    <option value="hausa">HAUSA</option>
+                    <option value="en-US">FRENCH</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container">
+            <a href="" class="header-logo">
+                <!-- <img src="./images/logo/logo.svg" alt="Anon logo" width="120" height="36"> -->
+                <h3 style="text-align: center; font-size: 2rem;">EST</h3>
+            </a>
+
+            <div class="header-search-container">
+                <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="header-user-actions">
+                <button class="action-btn">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+
+                <button class="action-btn">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="count">0</span>
+                </button>
+
+                <button class="action-btn">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="count">0</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="desktop-naviagtion-menu">
+        <div class="container">
+
+        
+            <ul class="desktop-menu-category-list">
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Home</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Categories</a>
+
+                    <div class="dropdown-panel">
+                        <!-- ELECTRONICS CATEGORY 1 -->
+                        <ul class="dropdown-panel-list">
+
+                            <li class="menu-title">
+                                <a href="#">Electronics</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Desktop</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Laptop</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Camera</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Tablet</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Headphone</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">
+                                    <img src="./images/electronics-banner-1.jpg" alt="headphone collection" width="250" height="119">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- MEN -->
+                        <ul class="dropdown-panel-list">
+
+                            <li class="menu-title">
+                                <a href="#">Men's</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Formal</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Casual</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Sports</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Jacket</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Sunglasses</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">
+                                    <img src="./images/mens-banner.jpg" alt="headphone collection" width="250" height="119">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- WOMEN CATEGORY -->
+                        <ul class="dropdown-panel-list">
+
+                            <li class="menu-title">
+                                <a href="#">Women's</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Formal</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Casual</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Perfume</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Cosmetics</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Bags</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">
+                                    <img src="./images/womens-banner.jpg" alt="headphone collection" width="250" height="119">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- ELECTRONICS CATEGORY 2 -->
+                        <ul class="dropdown-panel-list">
+
+                            <li class="menu-title">
+                                <a href="#">Electronics</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Smart Watch</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Smart Tv</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Keyboard</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="#">Microphone</a>
+                            </li>
+
+
+                            <li class="panel-list-item">
+                                <a href="#">
+                                    <img src="./images/electronics-banner-2.jpg" alt="headphone collection" width="250" height="119">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- MEN DROPDOWN LINK SECTION-->
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Men's</a>
+
+                    <ul class="dropdown-list">
+
+                        <li class="dropdown-item">
+                            <a href="#">Shirt</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Shorts & Jeans</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Safety Shoes</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Wallet</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- WOMEN DROPDOWN LINK SECTION -->
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Women's</a>
+
+                    <ul class="dropdown-list">
+
+                        <li class="dropdown-item">
+                            <a href="#">Dress & Frock</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Earings</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Necklace</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Makeup Kit</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- JEWELRY DROPDOWN  SECTION-->
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Jewelry</a>
+
+                    <ul class="dropdown-list">
+
+                        <li class="dropdown-item">
+                            <a href="#">Earrings</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Couple Rings</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Necklace</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Bracelets</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- PERFUME DROPDOWN SECTION -->
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Perfume</a>
+
+                    <ul class="dropdown-list">
+
+                        <li class="dropdown-item">
+                            <a href="#">Clothes perfume</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Deodorant</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Flower Fragrance</a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="#">Air Freshner</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Blog -->
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Blog</a>
+                </li>
+
+                <!-- Hot offers -->
+                <li class="menu-category">
+                    <a href="#" class="menu-title">Hot offers</a>
+                </li>
+                
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <div class="mobile-bottom-nav">
+        <button class="action-btn" data-mobile-menu-open-btn>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <button class="action-btn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="count">0</span>
+        </button>
+
+        <button class="action-btn">
+            <i class="fa-solid fa-house"></i>
+        </button>
+
+        <button class="action-btn">
+            <i class="fa-solid fa-heart"></i>
+            <span class="count">0</span>
+        </button>
+
+        <button class="action-btn" data-mobile-menu-open-btn>
+            <i class="fa-solid fa-grip"></i>
+        </button>
+    </div>
+
+    <div class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
+
+        <!-- Menu top -->
+        <div class="menu-top">
+            <h2 class="menu-title">Menu</h2>
+
+            <button class="menu-close-btn" data-menu-close-btn>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <ul class="mobile-menu-category-list">
+
+            <li class="menu-category">
+                <a href="#" class="menu-title">Home</a>
+            </li>
+
+            <!-- Mobile Menu category -->
+                <!-- MEN'S CATEGORY -->
+            <li class="menu-category">
+                
+                <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Men's</p>
+
+                    <div>
+                        <i class="fa-solid fa-plus add-icon"></i>
+                        <i class="fa-solid fa-minus remove-icon"></i>
+                    </div>
+                </button>
+
+                <ul class="sub-menu-category-list" data-accordion>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Shirt</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Shorts & Jeans</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Safety Shoes</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Shirt</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Women Mobile category -->
+            <li class="menu-category">
+                
+                <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Women's</p>
+
+                    <div>
+                        <i class="fa-solid fa-plus add-icon"></i>
+                        <i class="fa-solid fa-minus remove-icon"></i>
+                    </div>
+                </button>
+
+                <ul class="sub-menu-category-list" data-accordion>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Dress & Frock</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Earrings</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Necklace</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Makeup Kit</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <!-- Jewelry -->
+            <li class="menu-category">
+                
+                <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Jewelry</p>
+
+                    <div>
+                        <i class="fa-solid fa-plus add-icon"></i>
+                        <i class="fa-solid fa-minus remove-icon"></i>
+                    </div>
+                </button>
+
+                <ul class="sub-menu-category-list" data-accordion>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Earrings</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Couple Rings</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Bracelets</a>
+                    </li>
+                </ul>
+            </li>
+
+
+            <!-- Perfume Mobile category -->
+            <li class="menu-category">
+                
+                <button class="accordion-menu" data-accordion-btn>
+                    <p class="menu-title">Perfume</p>
+
+                    <div>
+                        <i class="fa-solid fa-plus add-icon"></i>
+                        <i class="fa-solid fa-minus remove-icon"></i>
+                    </div>
+                </button>
+
+                <ul class="sub-menu-category-list" data-accordion>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Clothes Perfume</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Deodorant</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Flower Fragrance</a>
+                    </li>
+
+                    <li class="submenu-category">
+                        <a href="#" class="submenu-title">Air Freshner</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Blog -->
+            <li class="menu-category">
+                <a href="#" class="menu-title">Blog</a>
+            </li>
+
+            <!-- Hot offers -->
+            <li class="menu-category">
+                <a href="#" class="menu-title">Hot offers</a>
+            </li>
+        </ul>
+        <!-- End of Menu Top -->
+
+        <!-- Menu bottom -->
+        <div class="menu-bottom">
+
+            <ul class="menu-category-list">
+                <!-- Language section -->
+                <li class="menu-category">
+
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Language</p>
+
+                        <i class="fa-solid fa-caret-left"></i> <!--Change later-->
+                    </button>
+
+                    <ul class="sub-menu-category-list " data-accordion>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">English</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Espa&ntilde;</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">Fren&ccedil;</a>
+                        </li>
+                    </ul>
+
+                    
+                    
+                </li>
+
+                <!-- currency section-->
+                <li class="menu-category">
+
+                    <button class="accordion-menu" data-accordion-btn>
+                        <p class="menu-title">Currency</p>
+
+                        <i class="fa-solid fa-caret-left"></i> <!--Change later-->
+                    </button>
+
+                    <ul class="sub-menu-category-list" data-accordion>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">USD &dollar;</a>
+                        </li>
+
+                        <li class="submenu-category">
+                            <a href="#" class="submenu-title">EUR &euro;</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+            </ul>
+
+            <!-- social container -->
+            <ul class="menu-social-container">
+
+                <!-- facebook -->
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+
+
+                <!-- twitter -->
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+
+
+                <!-- instagram -->
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+
+
+                <!-- linkedin -->
+                <li>
+                    <a href="#" class="social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- End of header -->
+
+<!-- main -->
+<main>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="slider-container has-scrollbar">
+
+                <div class="slider-item">
+                    <img src="images/banner-1.jpg" class="banner-img" alt="">
+
+                    <div class="banner-content">
+
+                        <p class="banner-subtitle">Trending Item</p>
+
+                        <h2 class="banner-title">Women's latest fashion sale</h2>
+
+                        <p class="banner-text">starting at &dollar; <b>20</b>.00</p>
+
+                        <a href="#" class="banner-btn">Shop now</a>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <img src="images/banner-2.jpg" class="banner-img" alt="">
+
+                    <div class="banner-content">
+
+                        <p class="banner-subtitle">Trending accessories</p>
+
+                        <h2 class="banner-title">Modern sunglasses</h2>
+
+                        <p class="banner-text">starting at &dollar; <b>15</b>.00</p>
+
+                        <a href="#" class="banner-btn">Shop now</a>
+                    </div>
+                </div>
+
+                <div class="slider-item">
+                    <img src="images/banner-3.jpg" class="banner-img" alt="">
+
+                    <div class="banner-content">
+
+                        <p class="banner-subtitle">Sale offer</p>
+
+                        <h2 class="banner-title">New fashion summer sale</h2>
+
+                        <p class="banner-text">starting at &dollar; <b>29</b>.99</p>
+
+                        <a href="#" class="banner-btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<!-- End of Main -->
+
+
+<!-- CATEGORY -->
+
+<div class="category">
+
+    <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+            
+            <div class="category-item">
+
+                <div class="category-img-box">
+                    <img src="images/icons/dress.svg" alt="dress & flock" width="30">
+                </div>
+
+                <div class="category-content-box">
+
+                    <div class="category-content-flex">
+                        <h3 class="category-item-title">Dress & Flock</h3>
+
+                        <p class="category-item-amount">(53)</p>
+                    </div>
+
+                    <a href="#" class="category-btn">show all</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+
+                <div class="category-img-box">
+                    <img src="images/icons/coat.svg" alt="dress & flock" width="30">
+                </div>
+
+                <div class="category-content-box">
+
+                    <div class="category-content-flex">
+                        <h3 class="category-item-title">Winter wear</h3>
+
+                        <p class="category-item-amount">(58)</p>
+
+                    </div>
+                    <a href="#" class="category-btn">show all</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+
+                <div class="category-img-box">
+                    <img src="images/icons/glasses.svg" alt="dress & flock" width="30">
+                </div>
+
+                <div class="category-content-box">
+
+                    <div class="category-content-flex">
+                        <h3 class="category-item-title">Dress & Flock</h3>
+
+                        <p class="category-item-amount">(68)</p>
+
+                    </div>
+                    <a href="#" class="category-btn">show all</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+
+                <div class="category-img-box">
+                    <img src="images/icons/shorts.svg" alt="dress & flock" width="30">
+                </div>
+
+                <div class="category-content-box">
+
+                    <div class="category-content-flex">
+                        <h3 class="category-item-title">Dress & Flock</h3>
+
+                        <p class="category-item-amount">(84)</p>
+
+                    </div>
+                    <a href="#" class="category-btn">show all</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+
+                <div class="category-img-box">
+                    <img src="images/icons/tee.svg" alt="T shirt" width="30">
+                </div>
+
+                <div class="category-content-box">
+
+                    <div class="category-content-flex">
+                        <h3 class="category-item-title">Dress & Flock</h3>
+
+                        <p class="category-item-amount">(35)</p>
+
+                    </div>
+                    <a href="#" class="category-btn">show all</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+
+                <div class="category-img-box">
+                    <img src="images/icons/jacket.svg" alt="dress & flock" width="30">
+                </div>
+
+                <div class="category-content-box">
+
+                    <div class="category-content-flex">
+                        <h3 class="category-item-title">Dress & Flock</h3>
+
+                        <p class="category-item-amount">(53)</p>
+
+                    </div>
+
+                    <a href="#" class="category-btn">show all</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+
+                <div class="category-img-box">
+                    <img src="images/icons/watch.svg" alt="watch" width="30">
+                </div>
+
+                <div class="category-content-box">
+
+                    <div class="category-content-flex">
+                        <h3 class="category-item-title">Dress & Flock</h3>
+
+                        <p class="category-item-amount">(27)</p>
+
+                    </div>
+                    
+                    <a href="#" class="category-btn">show all</a>
+                </div>
+            </div>
+
+            <div class="category-item">
+
+                <div class="category-img-box">
+                    <img src="images/icons/hat.svg" alt="hat & caps" width="30">
+                </div>
+
+                <div class="category-content-box">
+
+                    <div class="category-content-flex">
+                        <h3 class="category-item-title">Dress & Flock</h3>
+
+                        <p class="category-item-amount">(53)</p>
+
+                    </div>
+                    
+                    <a href="#" class="category-btn">show all</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- END OF CATEGORY -->
+
+
+
+<!-- PRODUCT -->
+
+<div class="product-container">
+
+    <div class="container">
+
+
+        <!-- SIDEBAR -->
+        <div class="sidebar active has-scrollbar" data-mobile-menu>
+
+            <div class="sidebar-category">
+
+                <div class="sidebar-top">
+                    <h2 class="sidebar-title">category</h2>
+
+                    <button class="sidebar-close-btn" data-menu-close-btn>
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <ul class="sidebar-menu-category-list">
+
+                    <li class="sidebar-menu-category">
+
+                        <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                            <div class="menu-title-flex">
+                                <img src="images/icons/dress.svg" alt="" width="20" height="20" class="menu-title-img">
+
+                                <p class="menu-tile">clothes</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-plus add-icon"></i>
+                                <i class="fa-solid fa-minus remove-icon"></i>
+                            </div>
+                        </button>
+
+                        <ul class="sidebar-submenu-category-list" data-accordion>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Shirt</p>
+                                    <data value="300" class="stock" title="available stock">300</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Shorts & jeans</p>
+                                    <data value="300" class="stock" title="available stock">60</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Jacket</p>
+                                    <data value="300" class="stock" title="available stock">50</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Dress & Frock</p>
+                                    <data value="300" class="stock" title="available stock">87</data>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="sidebar-menu-category">
+
+                        <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                            <div class="menu-title-flex">
+                                <img src="images/icons/shoes.svg" alt="" width="20" height="20" class="menu-title-img">
+
+                                <p class="menu-tile">Footwear</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-plus add-icon"></i>
+                                <i class="fa-solid fa-minus remove-icon"></i>
+                            </div>
+                        </button>
+
+                        <ul class="sidebar-submenu-category-list" data-accordion>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Sports</p>
+                                    <data value="300" class="stock" title="available stock">45</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Formal</p>
+                                    <data value="300" class="stock" title="available stock">75</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Casual</p>
+                                    <data value="300" class="stock" title="available stock">35</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Safety Shoes</p>
+                                    <data value="300" class="stock" title="available stock">26</data>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="sidebar-menu-category">
+
+                        <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                            <div class="menu-title-flex">
+                                <img src="images/icons/jewelry.svg" alt="" width="20" height="20" class="menu-title-img">
+
+                                <p class="menu-tile">Jewelry</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-plus add-icon"></i>
+                                <i class="fa-solid fa-minus remove-icon"></i>
+                            </div>
+                        </button>
+
+                        
+                        <ul class="sidebar-submenu-category-list" data-accordion>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Earrings</p>
+                                    <data value="46" class="stock" title="available stock">46</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Couple Rings</p>
+                                    <data value="73" class="stock" title="available stock">73</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Necklace</p>
+                                    <data value="61" class="stock" title="available stock">61</data>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                    <li class="sidebar-menu-category">
+
+                        <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                            <div class="menu-title-flex">
+                                <img src="images/icons/perfume.svg" alt="" width="20" height="20" class="menu-title-img">
+
+                                <p class="menu-tile">Perfume</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-plus add-icon"></i>
+                                <i class="fa-solid fa-minus remove-icon"></i>
+                            </div>
+                        </button>
+
+                        
+                        <ul class="sidebar-submenu-category-list" data-accordion>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Clothes Perfume</p>
+                                    <data value="12" class="stock" title="available stock">12</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Deodorant</p>
+                                    <data value="60" class="stock" title="available stock">60</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Jacket</p>
+                                    <data value="50" class="stock" title="available stock">50</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">dress & Frock</p>
+                                    <data value="87" class="stock" title="available stock">87</data>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                    <li class="sidebar-menu-category">
+
+                        <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                            <div class="menu-title-flex">
+                                <img src="images/icons/cosmetics.svg" alt="" width="20" height="20" class="menu-title-img">
+
+                                <p class="menu-tile">Cosmetics</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-plus add-icon"></i>
+                                <i class="fa-solid fa-minus remove-icon"></i>
+                            </div>
+                        </button>
+
+                        
+                        <ul class="sidebar-submenu-category-list" data-accordion>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Shampoo</p>
+                                    <data value="68" class="stock" title="available stock">68</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Sunscreen</p>
+                                    <data value="46" class="stock" title="available stock">46</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Body Wash</p>
+                                    <data value="79" class="stock" title="available stock">79</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">dress & Frock</p>
+                                    <data value="40" class="stock" title="available stock">40</data>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                    <li class="sidebar-menu-category">
+
+                        <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                            <div class="menu-title-flex">
+                                <img src="images/icons/glasses.svg" alt="" width="20" height="20" class="menu-title-img">
+
+                                <p class="menu-tile">Glasses</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-plus add-icon"></i>
+                                <i class="fa-solid fa-minus remove-icon"></i>
+                            </div>
+                        </button>
+
+                        
+                        <ul class="sidebar-submenu-category-list" data-accordion>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Sunglasses</p>
+                                    <data value="20" class="stock" title="available stock">20</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Lenses</p>
+                                    <data value="30" class="stock" title="available stock">30</data>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="sidebar-menu-category">
+
+                        <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                            <div class="menu-title-flex">
+                                <img src="images/icons/bag.svg" alt="" width="20" height="20" class="menu-title-img">
+
+                                <p class="menu-tile">Bags</p>
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-plus add-icon"></i>
+                                <i class="fa-solid fa-minus remove-icon"></i>
+                            </div>
+                        </button>
+
+                        
+                        <ul class="sidebar-submenu-category-list" data-accordion>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Shopping Bag</p>
+                                    <data value="63" class="stock" title="available stock">63</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Gym Backpack</p>
+                                    <data value="60" class="stock" title="available stock">60</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Purse</p>
+                                    <data value="67" class="stock" title="available stock">67</data>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-submenu-category">
+                                <a href="#" class="sidebar-submenu-title">
+                                    <p class="product-name">Wallet</p>
+                                    <data value="87" class="stock" title="available stock">87</data>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="product-showcase">
+
+                <h3 class="showcase-heading">Best Sellers</h3>
+
+                <div class="showcase-wrapper">
+
+                    <div class="showcase-container">
+
+                        <div class="showcase">
+
+                            <a href="#" class="showcase-img-box">
+                                <img src="images/products/1.jpg" alt="" class="showcase-img" width="75" height="75">
+                            </a>
+
+
+                            <div class="showcase-content">
+
+                                <a href="#">
+                                    <h4 class="showcase-title">baby fabric shoes</h4>
+                                </a>
+
+                                <div class="showcase-rating">
+                                    <!-- fill this with star icons -->
+                                </div>
+
+                                <div class="price-box">
+                                    <del>$5.00</del>
+                                    <p class="price">$4.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase">
+
+                            <a href="#" class="showcase-img-box">
+                                <img src="images/products/2.jpg" alt="" class="showcase-img" width="75" height="75">
+                            </a>
+
+
+                            <div class="showcase-content">
+
+                                <a href="#">
+                                    <h4 class="showcase-title">Men's hoodies t-shirt</h4>
+                                </a>
+
+                                <div class="showcase-rating">
+                                    <!-- fill this with star icons -->
+                                </div>
+
+                                <div class="price-box">
+                                    <del>$17.00</del>
+                                    <p class="price">$7.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase">
+
+                            <a href="#" class="showcase-img-box">
+                                <img src="images/products/3.jpg" alt="" class="showcase-img" width="75" height="75">
+                            </a>
+
+
+                            <div class="showcase-content">
+
+                                <a href="#">
+                                    <h4 class="showcase-title">Girls t-shirt</h4>
+                                </a>
+
+                                <div class="showcase-rating">
+                                    <!-- fill this with star icons -->
+                                </div>
+
+                                <div class="price-box">
+                                    <del>$5.00</del>
+                                    <p class="price">$3.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase">
+
+                            <a href="#" class="showcase-img-box">
+                                <img src="images/products/4.jpg" alt="" class="showcase-img" width="75" height="75">
+                            </a>
+
+
+                            <div class="showcase-content">
+
+                                <a href="#">
+                                    <h4 class="showcase-title">woolen hat for men</h4>
+                                </a>
+
+                                <div class="showcase-rating">
+                                    <!-- fill this with star icons -->
+                                </div>
+
+                                <div class="price-box">
+                                    <del>$15.00</del>
+                                    <p class="price">$12.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- END OF PRODUCT -->
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+button{
+    background: none;
+    font: inherit; 
+    border: none;
+    cursor: pointer;
+}
+
+.fa-square-xmark{
+    font-size: 1.6rem;
+    color: black;
+}
+
+img, fa-solid, button, a{display: block;}
+
+span{display: inline-block;} 
+
+html{
+    // font-size: 62.5%;
+    font-family: "poppins", sans-serif;
+    overscroll-behavior: contain;
+}
+
+input{
+    display: block;
+    width: 100%;
+    font: inherit;
+
+    &[type='text'],
+    &[type='number'],
+    textarea {
+    font-size: 16px; }
+
+}
+
+input::placeholder{font: inherit;}
+
+body{
+    background-color: $white;
+    padding-bottom: 60px;
+
+    &::-webkit-scrollbar{width:15px}
+    &::-webkit-scrollbar-track{
+        background: $white;
+        border-left: 1px solid $cultured;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: hsl(0, 0%, 88%);
+        border: 3px solid $white;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover{background: hsl(0, 0%, 70%);}
+    
+}
+
+
+// Reused styles
+.container{
+    padding: 0 1.5rem;
+}
+
+.has-scrollbar{
+    padding-bottom: 5px;
+
+    &:hover::-webkit-scrollbar{background-color: hsl(0, 0%, 90%);}
+    &:hover::-webkit-scrollbar-thumb{background-color: hsl(0, 0%, 80%);}
+}
+
+.has-scrollbar::-webkit-scrollbar{
+    width: 12px; //for vertical scroll
+    height: 12px; //for horizontal scroll
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border: 3px solid $white;
+    border-radius: 20px;
+}
+
+
