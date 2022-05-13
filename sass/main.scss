@@ -666,185 +666,287 @@ header {
 
 
 // ------SIDEBAR-----
+.product-container{
 
 
-.sidebar{
-    background-color: $white;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: -100%; //for animation purpose when active
-    bottom: 0;
-    width: 100%;
-    max-width: 320px;
-    padding: 30px;
-    overflow-y: scroll;
-    overscroll-behavior: contain;
-    visibility: hidden;
-    transition: 0.5s ease;
-    z-index: 20;
 
 
-    &.active{
-        left: 0;
-        visibility: visible;
-    }
-
-    &-category{
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid $cultured;
-    }
-
-    &-top{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    &-title{
-        font-size: $fs-5;
-        color: $onyx;
-        text-transform: uppercase;
-        letter-spacing: 0.8px;
-        font-weight: $weight-600;
-    }
-
-    &-close-btn .fa-xmark{font-size: 1.2rem;}
-
-    &-accordion-menu{
-        display: flex;
+    // ----------SIDEBAR----------
+    .sidebar{
+        background-color: $white;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: -100%; //for animation purpose when active
+        bottom: 0;
         width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        padding: 7px 0;
-
-        .menu-title-flex{
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            .menu-tile{
-                font-size: $fs-5;
-                text-transform: capitalize;
-                color: $sonic-silver;
-                font-weight: $weight-500;
-            }
-        }
-
-        .add-icon, .remove-icon{
-            color: $sonic-silver;
-            font-size: 14px;
-
-        }
-
-        &.active .add-icon, .remove-icon{display: none;}
-
-        &.active .remove-icon{display: block;}
-        
-        // .remove-icon, &.active .add-icon{display: block;}
-    }
-
-    &-submenu-category-list{
-        border-top: 1px solid $cultured;
-        max-height: 0;
-        overflow: hidden;
+        max-width: 320px;
+        padding: 30px;
+        overflow-y: scroll;
+        overscroll-behavior: contain;
         visibility: hidden;
-        transition: 0.5s ease-in-out;
-
+        transition: 0.5s ease;
+        z-index: 20;
+    
+    
         &.active{
-            padding: 13px;
-            max-height: 140px;
+            left: 0;
             visibility: visible;
-            // transition: 0.5s ease-in-out;
         }
-
-        .sidebar-submenu-title{
+    
+        &-category{
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $cultured;
+        }
+    
+        &-top{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: $sonic-silver;
-            font-size: $fs-7;
-            padding: 5px 0;
-
-            &:hover{
-                color: $eerie-black;
-            }
-
-            .product-name{text-transform: capitalize;}
+            margin-bottom: 10px;
         }
-    }
-
-
-    .product-showcase{
-
-        .showcase-heading{
+    
+        &-title{
             font-size: $fs-5;
-            font-weight: $weight-600;
             color: $onyx;
             text-transform: uppercase;
             letter-spacing: 0.8px;
-            margin-bottom: 15px;
+            font-weight: $weight-600;
         }
-        
-        .showcase{
-            display: flex;
-            align-items: center;
-            gap: 15px;
-
-
-            &:not(:last-child){
-                margin-bottom: 15px;
     
-                
-            }
-
-            &-img-box{border-radius: $border-radius-sm;}
-
-            &-content{width: calc(100% - 90px);}
-            // &-content{width: 30px;}
-            
-            &-title{
-                color: $onyx;
-                font-size: $fs-7;
-                font-weight: $weight-400;
-                text-transform: capitalize;
-                overflow: hidden;       //W
-                white-space: nowrap;    //T
-                text-overflow: ellipsis; //F
-            }
-
-            &-rating{
+        &-close-btn .fa-xmark{font-size: 1.2rem;}
+    
+        &-accordion-menu{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 0;
+    
+            .menu-title-flex{
                 display: flex;
                 align-items: center;
-                color: $sandy-brown;
-                font-size: 13px;
-                padding: 4px 0;
+                gap: 10px;
+    
+                .menu-tile{
+                    font-size: $fs-5;
+                    text-transform: capitalize;
+                    color: $sonic-silver;
+                    font-weight: $weight-500;
+                }
             }
-
-            .price-box{
+    
+            .add-icon, .remove-icon{
+                color: $sonic-silver;
+                font-size: 14px;
+    
+            }
+    
+            &.active .add-icon, .remove-icon{display: none;}
+    
+            &.active .remove-icon{display: block;}
+            
+            // .remove-icon, &.active .add-icon{display: block;}
+        }
+    
+        &-submenu-category-list{
+            border-top: 1px solid $cultured;
+            max-height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            transition: 0.5s ease-in-out;
+    
+            &.active{
+                padding: 13px;
+                max-height: 140px;
+                visibility: visible;
+                // transition: 0.5s ease-in-out;
+            }
+    
+            .sidebar-submenu-title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $sonic-silver;
+                font-size: $fs-7;
+                padding: 5px 0;
+    
+                &:hover{
+                    color: $eerie-black;
+                }
+    
+                .product-name{text-transform: capitalize;}
+            }
+        }
+    
+    
+        .product-showcase{
+    
+            .showcase-heading{
+                font-size: $fs-5;
+                font-weight: $weight-600;
+                color: $onyx;
+                text-transform: uppercase;
+                letter-spacing: 0.8px;
+                margin-bottom: 15px;
+            }
+            
+            .showcase{
                 display: flex;
                 align-items: center;
                 gap: 15px;
-
-                del{
-                    color: $sonic-silver;
-                    font-size: 13px;
+    
+    
+                &:not(:last-child){
+                    margin-bottom: 15px;
+        
+                    
                 }
-
-                .price{
+    
+                &-img-box{border-radius: $border-radius-sm;}
+    
+                &-content{width: calc(100% - 90px);}
+                // &-content{width: 30px;}
+                
+                &-title{
+                    color: $onyx;
                     font-size: $fs-7;
-                    font-weight: $weight-600;
-                    color: $davys-gray;
+                    font-weight: $weight-400;
+                    text-transform: capitalize;
+                    overflow: hidden;       //W
+                    white-space: nowrap;    //T
+                    text-overflow: ellipsis; //F
+                }
+    
+                &-rating{
+                    display: flex;
+                    align-items: center;
+                    color: $sandy-brown;
+                    font-size: 13px;
+                    padding: 4px 0;
+                }
+    
+                .price-box{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+    
+                    del{
+                        color: $sonic-silver;
+                        font-size: 13px;
+                    }
+    
+                    .price{
+                        font-size: $fs-7;
+                        font-weight: $weight-600;
+                        color: $davys-gray;
+                    }
+                }
+            }
+    
+        }
+    
+    }
+    // -----------END OF SIDEBAR-----------
+
+
+    // ------PRODUCT MINIMAL--------
+    .product-minimal{
+        margin-bottom: 30px;
+
+        // .product-showcase{
+        //     margin-bottom: 10px;
+
+
+        // }
+
+        .showcase-wrapper{
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            overscroll-behavior-inline: contain;
+            scroll-snap-type: inline mandatory;
+
+            .showcase-container{
+                min-width: 100%;
+                padding: 0 5px;
+                scroll-snap-align: start;
+
+
+                .showcase{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    justify-content: flex-start;
+                    // padding: 10px 0;
+                    border: 1px solid $cultured;
+                    // margin: 10px 0;
+                    padding: 15px;
+                    border-radius: $border-radius-md;
+                    
+                    &:not(:last-child){
+                        margin-bottom: 15px;
+                    }
+
+                    &-content{
+                        width: calc(100% - 85px);
+
+                        .showcase-title{
+                            color: $eerie-black;
+                            text-transform: capitalize;
+                            font-size: $fs-7;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            margin-bottom: 5px;
+                        }
+
+                        .showcase-category{
+                            text-transform: capitalize;
+                            font-size: $fs-8;
+                            color: $davys-gray;
+                            margin-bottom: 7px;
+                            width: max-content;
+                            
+                            &:hover{color: $salmon-pink;}
+
+                        }
+
+                        .price-box{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            .price{
+                                font-size: $fs-7;
+                                font-weight: $weight-700;
+                                color: $salmon-pink;
+                            }
+
+                            del{
+                                font-size: $fs-9;
+                                color: $sonic-silver;
+                                
+                            }
+                        }
+                    }
+                    
                 }
             }
         }
-
     }
 
+    
+
+
+    // ------END OF PRODUCT MINIMAL-----
 
 }
+
+
+
+
 
 
 // ------END OF SIDEBAR-----

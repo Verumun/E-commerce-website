@@ -76,6 +76,15 @@ body {
   border: 3px solid white;
   border-radius: 20px; }
 
+.title {
+  color: #212121;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 30px; }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -519,7 +528,7 @@ header .mobile-navigation-menu {
     text-transform: capitalize;
     font-weight: 500; }
 
-.sidebar {
+.product-container .sidebar {
   background-color: white;
   position: fixed;
   top: 0;
@@ -534,87 +543,87 @@ header .mobile-navigation-menu {
   visibility: hidden;
   transition: 0.5s ease;
   z-index: 20; }
-  .sidebar.active {
+  .product-container .sidebar.active {
     left: 0;
     visibility: visible; }
-  .sidebar-category {
+  .product-container .sidebar-category {
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #ededed; }
-  .sidebar-top {
+  .product-container .sidebar-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px; }
-  .sidebar-title {
+  .product-container .sidebar-title {
     font-size: 1rem;
     color: #454545;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     font-weight: 600; }
-  .sidebar-close-btn .fa-xmark {
+  .product-container .sidebar-close-btn .fa-xmark {
     font-size: 1.2rem; }
-  .sidebar-accordion-menu {
+  .product-container .sidebar-accordion-menu {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 7px 0; }
-    .sidebar-accordion-menu .menu-title-flex {
+    .product-container .sidebar-accordion-menu .menu-title-flex {
       display: flex;
       align-items: center;
       gap: 10px; }
-      .sidebar-accordion-menu .menu-title-flex .menu-tile {
+      .product-container .sidebar-accordion-menu .menu-title-flex .menu-tile {
         font-size: 1rem;
         text-transform: capitalize;
         color: #787878;
         font-weight: 500; }
-    .sidebar-accordion-menu .add-icon, .sidebar-accordion-menu .remove-icon {
+    .product-container .sidebar-accordion-menu .add-icon, .product-container .sidebar-accordion-menu .remove-icon {
       color: #787878;
       font-size: 14px; }
-    .sidebar-accordion-menu.active .add-icon, .sidebar-accordion-menu .remove-icon {
+    .product-container .sidebar-accordion-menu.active .add-icon, .product-container .sidebar-accordion-menu .remove-icon {
       display: none; }
-    .sidebar-accordion-menu.active .remove-icon {
+    .product-container .sidebar-accordion-menu.active .remove-icon {
       display: block; }
-  .sidebar-submenu-category-list {
+  .product-container .sidebar-submenu-category-list {
     border-top: 1px solid #ededed;
     max-height: 0;
     overflow: hidden;
     visibility: hidden;
     transition: 0.5s ease-in-out; }
-    .sidebar-submenu-category-list.active {
+    .product-container .sidebar-submenu-category-list.active {
       padding: 13px;
       max-height: 140px;
       visibility: visible; }
-    .sidebar-submenu-category-list .sidebar-submenu-title {
+    .product-container .sidebar-submenu-category-list .sidebar-submenu-title {
       display: flex;
       justify-content: space-between;
       align-items: center;
       color: #787878;
       font-size: 0.875rem;
       padding: 5px 0; }
-      .sidebar-submenu-category-list .sidebar-submenu-title:hover {
+      .product-container .sidebar-submenu-category-list .sidebar-submenu-title:hover {
         color: #212121; }
-      .sidebar-submenu-category-list .sidebar-submenu-title .product-name {
+      .product-container .sidebar-submenu-category-list .sidebar-submenu-title .product-name {
         text-transform: capitalize; }
-  .sidebar .product-showcase .showcase-heading {
+  .product-container .sidebar .product-showcase .showcase-heading {
     font-size: 1rem;
     font-weight: 600;
     color: #454545;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     margin-bottom: 15px; }
-  .sidebar .product-showcase .showcase {
+  .product-container .sidebar .product-showcase .showcase {
     display: flex;
     align-items: center;
     gap: 15px; }
-    .sidebar .product-showcase .showcase:not(:last-child) {
+    .product-container .sidebar .product-showcase .showcase:not(:last-child) {
       margin-bottom: 15px; }
-    .sidebar .product-showcase .showcase-img-box {
+    .product-container .sidebar .product-showcase .showcase-img-box {
       border-radius: 5px; }
-    .sidebar .product-showcase .showcase-content {
+    .product-container .sidebar .product-showcase .showcase-content {
       width: calc(100% - 90px); }
-    .sidebar .product-showcase .showcase-title {
+    .product-container .sidebar .product-showcase .showcase-title {
       color: #454545;
       font-size: 0.875rem;
       font-weight: 400;
@@ -622,20 +631,72 @@ header .mobile-navigation-menu {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
-    .sidebar .product-showcase .showcase-rating {
+    .product-container .sidebar .product-showcase .showcase-rating {
       display: flex;
       align-items: center;
       color: #f6a355;
       font-size: 13px;
       padding: 4px 0; }
-    .sidebar .product-showcase .showcase .price-box {
+    .product-container .sidebar .product-showcase .showcase .price-box {
       display: flex;
       align-items: center;
       gap: 15px; }
-      .sidebar .product-showcase .showcase .price-box del {
+      .product-container .sidebar .product-showcase .showcase .price-box del {
         color: #787878;
         font-size: 13px; }
-      .sidebar .product-showcase .showcase .price-box .price {
+      .product-container .sidebar .product-showcase .showcase .price-box .price {
         font-size: 0.875rem;
         font-weight: 600;
         color: #545454; }
+
+.product-container .product-minimal {
+  margin-bottom: 30px; }
+  .product-container .product-minimal .showcase-wrapper {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory; }
+    .product-container .product-minimal .showcase-wrapper .showcase-container {
+      min-width: 100%;
+      padding: 0 5px;
+      scroll-snap-align: start; }
+      .product-container .product-minimal .showcase-wrapper .showcase-container .showcase {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: flex-start;
+        border: 1px solid #ededed;
+        padding: 15px;
+        border-radius: 10px; }
+        .product-container .product-minimal .showcase-wrapper .showcase-container .showcase:not(:last-child) {
+          margin-bottom: 15px; }
+        .product-container .product-minimal .showcase-wrapper .showcase-container .showcase-content {
+          width: calc(100% - 85px); }
+          .product-container .product-minimal .showcase-wrapper .showcase-container .showcase-content .showcase-title {
+            color: #212121;
+            text-transform: capitalize;
+            font-size: 0.875rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 5px; }
+          .product-container .product-minimal .showcase-wrapper .showcase-container .showcase-content .showcase-category {
+            text-transform: capitalize;
+            font-size: 0.813rem;
+            color: #545454;
+            margin-bottom: 7px;
+            width: max-content; }
+            .product-container .product-minimal .showcase-wrapper .showcase-container .showcase-content .showcase-category:hover {
+              color: #ff8f9c; }
+          .product-container .product-minimal .showcase-wrapper .showcase-container .showcase-content .price-box {
+            display: flex;
+            align-items: center;
+            gap: 10px; }
+            .product-container .product-minimal .showcase-wrapper .showcase-container .showcase-content .price-box .price {
+              font-size: 0.875rem;
+              font-weight: 700;
+              color: #ff8f9c; }
+            .product-container .product-minimal .showcase-wrapper .showcase-container .showcase-content .price-box del {
+              font-size: 0.75rem;
+              color: #787878; }

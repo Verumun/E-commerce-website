@@ -94,4 +94,13 @@ body{
     border-radius: 20px;
 }
 
+.title{
+    color: $eerie-black;
+    font-size: $fs-5;
+    font-weight: $weight-600;
+    text-transform: capitalize;
+    padding-bottom: 10px; //for the border
+    border-bottom: 1px solid $cultured;
+    margin-bottom: 30px;
+}
 
