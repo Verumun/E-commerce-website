@@ -59,7 +59,7 @@ for (let i = 0; i < accordionBtn.length; i++) {
   accordionBtn[i].addEventListener("click", function () {
 
     const clickedBtn = this.nextElementSibling.classList.contains("active");
-
+    
     for (let i = 0; i < accordionData.length; i++) {
       if (clickedBtn) break;
 
@@ -69,8 +69,8 @@ for (let i = 0; i < accordionBtn.length; i++) {
       }
     }
 
-    this.nextElementSibling.classList.toggle("active");
-    this.classList.toggle("active");
+    this.nextElementSibling.classList.toggle("active"); // this is for the sub category
+    this.classList.toggle("active"); // this toggles the btn
    
   });
 }
