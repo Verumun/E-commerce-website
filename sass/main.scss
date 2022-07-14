@@ -1275,3 +1275,339 @@ header {
 }
 
 
+
+// TESTIMONIAL 
+.container{
+
+  .testimonial-box{margin-bottom: 50px;}
+
+  .testimonial{
+
+    &-card{
+      border: 1px solid $cultured;
+      padding: 30px 20px;
+      border-radius: $border-radius-md;
+      text-align: center;
+      margin-bottom: 25px; 
+    }
+
+    &-banner{
+      margin:auto;
+      margin-bottom: 25px;
+      border-radius: 50%;
+    }
+
+    &-name{
+      font-weight: $weight-700;
+      text-transform: uppercase;
+      color: $sonic-silver;
+      margin-bottom: 5px;
+    }
+
+    &-title{
+      color:$onyx;
+      font-size: $fs-7;
+      margin-bottom: 15px;
+    }
+
+    .quotation-img{
+      margin: auto;
+      margin-bottom: 10px;
+    }
+
+    &-desc{
+      max-width: 70%;
+      margin: auto;
+      color: $sonic-silver;
+      font-size: $fs-7;
+    }
+  }
+
+  // CTA
+  .cta-container{
+    position: relative;
+    aspect-ratio: 5 / 6;
+    border-radius: $border-radius-md;
+    overflow: hidden;
+    margin-bottom: 25px;
+
+    .cta-banner{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .cta-content{
+      background: hsla(0, 0%, 100%, 0.7);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: fit-content;
+      padding: 15px 20px;
+      text-align: center;
+      border: $border-radius-sm;
+
+      .discount{
+        background: $eerie-black;
+        color: $white;
+        font-size: $fs-11;
+        font-weight: $weight-600;
+        text-transform: uppercase;
+        width: max-content;
+        margin: auto;
+        padding:0 5px;
+        border-radius: $border-radius-sm;
+        margin-bottom: 5px;
+      }
+
+      .cta-title{
+        color: $onyx;
+        font-size: $fs-5;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+      }
+
+      .cta-text{
+        color:$sonic-silver;
+        font-size: $fs-7;
+        margin-bottom: 5px;
+      }
+
+      .cta-btn{
+        font-size: $fs-9;
+        margin: auto;
+        text-transform: uppercase;
+        font-weight: $weight-700;
+        color: $sonic-silver;
+      }
+    }
+  }
+
+  
+  // SERVICES
+  .service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px 15px;
+    border: 1px solid $cultured;
+    border-radius: $border-radius-md;
+
+    .service-item{
+      min-width: 190px;
+      // background-color: red;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      &:hover{
+        .service-icon{color:$eerie-black}
+      }
+
+      .service-icon{
+        font-size: 25px;
+        color: $salmon-pink;
+        transition: 200ms ease-in;
+        // & .fa-solid{}
+
+        // &:hover{
+        //   color: $eerie-black;
+        // }
+      }
+
+
+      .service-title{
+        color: $sonic-silver;
+        font-size: $fs-7;
+        font-weight: $weight-600;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+      }
+
+      .service-desc{
+        color: $sonic-silver;
+        font-size: $fs-9;
+      }
+    }
+  }
+
+
+  // BLOG
+  .blog{
+    margin-bottom: 30px;
+
+    &-container{
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      scroll-snap-type: inline mandatory;
+
+      .blog-card{
+        min-width: 100%;
+        scroll-snap-align: start;
+
+        .blog-banner{
+          width: 100%;
+          border-radius: $border-radius-md;
+          margin-bottom: 20px;
+        }
+
+        .blog-category{
+          width: max-content;
+          color: $salmon-pink;
+          font-size: $fs-8;
+        }
+
+        .blog-title{
+          color: $eerie-black;
+          font-size: $fs-5;
+          font-weight: $weight-600;
+          line-height: 1.4;
+          margin-bottom: 5px;
+          transition: 250ms ease-in-out;
+
+          &:hover{color:$salmon-pink;}
+        }
+
+        .blog-meta{
+          color:$sonic-silver;
+          font-size: $fs-7;
+
+          cite{
+            font-style: normal;
+            color: $davys-gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// ------FOOTER-----
+
+footer{
+  background-color: $eerie-black;
+  padding: 30px 0;
+
+  .footer-category{
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid $onyx;
+
+    &-title{
+      color: $salmon-pink;
+      font-size: $fs-6;
+      font-weight: $weight-600;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    &-box{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 20px;
+      margin-bottom: 15px;
+
+      &-title{
+        color: $spanish-gray;
+        font-size: $fs-8;
+        font-weight: $weight-600;
+        text-transform: uppercase;
+      }
+
+    }
+
+    &-link{
+      position: relative;
+      color: $sonic-silver;
+      font-size: $fs-7;
+      text-transform: capitalize;
+      transition: 250ms ease-in-out;
+      line-height: 1.8;
+
+      &:hover{color: $spanish-gray;}
+
+      &:not(:last-child)::after{
+        position: absolute;
+        content: '';
+        top: 3px;
+        right: -10px;
+        background: $sonic-silver;
+        width: 1px;
+        height: 15px;
+      }
+    }
+  }
+
+  .footer-nav{
+    padding-bottom: 30px;
+    border-bottom: 1px solid $onyx;
+    margin-bottom: 30px;
+
+    &-list:not(:last-child){margin-bottom: 20px;}
+
+    .nav-title{
+      position: relative;
+      color: $white;
+      font-size: $fs-7;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      // background-color: red;
+      padding-bottom: 5px;
+
+      &::before{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        // right: 0;
+        background: $salmon-pink;
+        width: 60px;
+        height: 1px;
+      }
+
+    }
+
+    &-item{
+      padding: 3px 0;
+    }
+
+    &-link, .footer-nav-item .content{
+      width: max-content;
+      color: $sonic-silver;
+      font-size: $fs-7;
+      text-transform: capitalize;
+      transition: 200ms ease-in-out;
+    }
+
+    &-link:hover{color: $salmon-pink;}
+
+    .footer-nav-item{
+      &.flex{
+        display:flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      font-style: normal;
+      margin-bottom: 5px;
+
+      .icon-box{
+        color: $sonic-silver;
+        font-size: 20px;
+      }
+    }
+
+
+  }
+
+
+}
