@@ -1182,7 +1182,8 @@ footer {
     display: block;
     padding: 10px;
     border-bottom: 1px solid #ededed; }
-    header .header-top-actions, header .header-top .header-social-container {
+    header .header-top-actions,
+    header .header-top .header-social-container {
       display: none; }
     header .header-top .header-alert-news {
       color: #787878;
@@ -1245,11 +1246,69 @@ footer {
     font-size: 0.875rem; } }
 
 @media (min-width: 570px) {
-  header .header-top .header-container, header .header-main .container {
+  header .header-top .header-container,
+  header .header-main .container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
   header .header-logo {
     margin-bottom: 0; }
-  header .header-top-actions select {
-    display: block !important; } }
+  header .header-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px; }
+    header .header-top-actions select {
+      border: none;
+      display: block;
+      min-width: 80px;
+      padding: 5px 0;
+      font: inherit;
+      color: #787878;
+      font-size: 0.813rem;
+      text-transform: uppercase;
+      cursor: pointer; }
+      header .header-top-actions select:hover {
+        color: #212121; }
+  header .header-search-container {
+    min-width: 300px; }
+  /*
+  BANNER
+  */
+  .banner .slider-container .slider-item {
+    aspect-ratio: 4/2; }
+    .banner .slider-container .slider-item .banner-content {
+      background: none; }
+  /*
+  CATEGORY
+  */
+  .category-item-container {
+    gap: 30px; }
+  .category-item {
+    min-width: calc(50% - 60px); }
+  /*
+  PRODUCT
+  */
+  .product-container .product-minimal .showcase-wrapper .showcase-container {
+    min-width: 50%; }
+  .product-container .product-featured .showcase-wrapper .showcase-container .showcase .showcase-img {
+    max-width: 450px;
+    margin: auto; }
+  .product-container .product-featured .showcase-wrapper
+.showcase-container
+.showcase
+.countdown-box
+.countdown {
+    gap: 20px; }
+  /*
+  CTA
+  */
+  .container {
+    /*
+    BLOG
+    */ }
+    .container .cta-container {
+      aspect-ratio: 6/5; }
+    .container .blog-container {
+      gap: 30px; }
+      .container .blog-container .blog-card {
+        min-width: calc(50% - 50px); } }
